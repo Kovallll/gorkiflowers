@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: 'true'
   },
 
   // Navigation arrows
@@ -19,7 +20,20 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+    draggable: true,
+    dragSize: '140px',
+    snapOnRelease: true
   },
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  mousewheel: {
+    invert: true,
+  },
+
 });
 
 flsFunctions.isWebp();

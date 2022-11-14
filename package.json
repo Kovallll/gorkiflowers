@@ -147,6 +147,7 @@
     "glogg": "^1.0.2",
     "graceful-fs": "^4.2.10",
     "gulp-cli": "^2.3.0",
+    "gulp4-prefix": "^1.0.1",
     "gulplog": "^1.0.0",
     "has": "^1.0.3",
     "has-property-descriptors": "^1.0.0",
