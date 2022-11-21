@@ -14,49 +14,85 @@
       margin: 60px auto;
     }
     @media (max-width:($md4 + $px)) {
-      height: 100% !important;
+      height: 100%  !important;
+      width: 100% !important;
+      margin: 10px auto;
+    }
+    @media (max-width:($md5 + $px)) {
+      height:100%  !important;
       width: 100% !important;
       margin: 10px auto;
     }
 
     &__title {  
         font-size: 70px;
+        width: 100%;
         position: absolute;
-        left: 1%;
-        bottom: 100px;
+        transform: translateX(-100%);
+        bottom: 215px;
         z-index: 100;
         color: rgb(235, 226, 226); 
         @media (max-width:($md2 + $px)) {
           font-size: 60px;
-          bottom: 130px;
+          bottom: 150px;
         }
         @media (max-width:($md3 + $px)) {
           font-size: 50px;
-          bottom: 90px;
+          bottom: 130px;
         }  
         @media (max-width:($md4 + $px)) {
           font-size: 43px;
-          bottom: 50px;
+          bottom: 120px;
         }   
         @media (max-width:($md5 + $px)) {
           font-size: 33px;
-          bottom: 30px;
+          bottom: 85px;
         }    
     }
+
 
     &-scrollbar-drag {
       background: blue !important;
     }
 
 }
+
 :root {
   --swiper-navigation-size: 64px !important;
+  @media (max-width:($md2 + $px)) {
+    --swiper-navigation-size: 64px !important;
+  }
+  @media (max-width:($md3 + $px)) {
+    --swiper-navigation-size: 54px !important;
+  }  
+  @media (max-width:($md4 + $px)) {
+    --swiper-navigation-size: 44px !important;
+  }   
+  @media (max-width:($md5 + $px)) {
+    --swiper-navigation-size: 34px !important;
+  }  
 }
 
 .swiper-pagination-bullet {
   width: 14px !important;
   height: 14px !important;
   opacity: 0.5 !important;
+  @media (max-width:($md2 + $px)) {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  @media (max-width:($md3 + $px)) {
+    width: 10px !important;
+    height: 10px !important;
+  }  
+  @media (max-width:($md4 + $px)) {
+    width: 8px !important;
+    height: 8px !important;
+  }   
+  @media (max-width:($md5 + $px)) {
+    width: 6px !important;
+    height: 6px !important;
+  }  
 }
 
 .swiper-pagination-bullet-active {
@@ -65,4 +101,16 @@
 
 .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
   height: 8px !important;
+  @media (max-width:($md2 + $px)) {
+    height: 6px !important;
+  }
+  @media (max-width:($md3 + $px)) {
+    height: 5px !important;
+  }  
+  @media (max-width:($md4 + $px)) {
+    height: 4px !important;
+  }   
+  @media (max-width:($md5 + $px)) {
+    height: 3px !important;
+  } 
 }
