@@ -185,9 +185,6 @@
             }
             
         } 
-        &__phone {
-            flex-direction: column;
-        }
     }
 
     &__links {
@@ -278,7 +275,9 @@
             color: #eb4536;
             cursor: pointer;
         }
-
+        a {
+            color: #515151;
+        }
     }
 
     &__mail {
@@ -297,6 +296,9 @@
         }
         @media (max-width:($md3 + $px)) {
             font-size: 12px;
+        }
+        span {
+            color: #515151;
         }
     }
     &__mail-icon {
