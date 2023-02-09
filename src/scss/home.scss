@@ -41,31 +41,34 @@
 .info-block {
     display: inline-flex;
     margin: 0px 35px;
-    padding: 35px;
-    width: 360px;
-    min-height: 230px;
+    padding:35px 25px;
+    width: 350px;
+    height: 200px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
     border-radius: 10px;
     flex-direction: column;
 
     @media (max-width:($md2 + $px)) {
-        min-height: 200px;
+        height: 180px;
         margin: 0px 25px;
         padding: 30px;
     }
 
     @media (max-width:($md3 + $px)) {
-        min-height: 180px;
+        height: 150px;
         padding: 25px;
         margin: 0px 10px;
     }
     @media (max-width:($md4 + $px)) {
+        width: 280px;
+        height: 120px;
         padding: 15px;
         margin: 0 auto 20px;
     }
     @media (max-width:($md5 + $px)) {
+        height: 100px;
+        width: 260px;
         padding: 15px;
-        width: 250px;
         margin: 0 auto 20px;
     }
 
@@ -73,6 +76,9 @@
         display: flex;
         text-align: center;
         margin: 0 auto 10px;
+    }
+    &__text {
+        text-align: center;
     }
 }
 

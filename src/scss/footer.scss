@@ -35,7 +35,6 @@
     &__delivery {
         height: 100%;
         width: 350px;
-
         h4 {
             margin-bottom: 10px;
         }
@@ -50,31 +49,10 @@
         flex-direction: column;
         align-items: flex-start;
         color: #515151;
-
         @media (max-width:($md4 + $px)) {
             width: 100%;
             margin-bottom: 10px;
         }
-        span {
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0px 0px 0px 10px;
-
-            @media (max-width:$md0) {
-                font-size: 14px;
-            }
-
-            @media (max-width:($md2 + $px)) {
-                font-size: 12px;
-                margin: 0px 0px 0px 5px;
-            }
-
-            @media (max-width:($md3 + $px)) {
-                font-size: 10px;
-            }
-        }
-
         &__phone {
             flex-direction: column;
         }
@@ -88,7 +66,6 @@
         font-size: 18px;
         margin: 10px 0px 0px 0px;
         width: 310px;
-
         .fa-solid {
             margin: 0px 0px 15px 0px;
             transition: color 0.4s ease 0s;
@@ -102,17 +79,14 @@
                 cursor: pointer;
             }
         }
-
         @media (max-width:$md0) {
             font-size: 16px;
             width: 280px;
         }
-
         @media (max-width:($md2 + $px)) {
             font-size: 13px;
             width: 230px;
         }
-
         @media (max-width:($md3 + $px)) {
             font-size: 10px;
             width: 180px;
@@ -141,12 +115,13 @@
 
     &__call-block {
         margin: 0px 0px 10px 0px;
-
-        &:hover {
+        a:hover {
             color: #eb4536;
             cursor: pointer;
         }
-
+        a {
+            color: #515151;
+        }
     }
 
     &__adress {

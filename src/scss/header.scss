@@ -1,4 +1,9 @@
+html{
+    scroll-behavior: smooth;
+  }
+
 .header {
+    
     &__content {
         @media (max-width:$md0) {
             max-width: $md2;
@@ -20,28 +25,28 @@
 .menu {
     
     &__logo {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         @media (max-width:$md0) {
-            height: 65px;
-            width: 65px;
+            height: 75px;
+            width: 75px;
         }
         @media (max-width:($md2 + $px)) {
-            width: 55px;
-            height: 55px;
+            width: 65px;
+            height: 65px;
         }
         @media (max-width:($md3 + $px)) {
-            height: 45px;
-            width: 45px;
+            height: 55px;
+            width: 55px;
         }
         @media (max-width:($md4 + $px)) {
-            height: 40px;
-            width: 40px;
+            height: 50px;
+            width: 50px;
         }
         @media (max-width:($md5 + $px)) {
-            height: 35px;
-            width: 35px;
+            height: 45px;
+            width: 45px;
         }
     }
 
@@ -53,25 +58,25 @@
 
     &__nav {
         display: flex;
-        height: 80px;
+        height: 90px;
         max-width: $maxWidthHeader;
         @media (max-width:$md0) {
             max-width: $md2;
         }
         @media (max-width:($md2 + $px)) {
-            height: 70px;
+            height: 80px;
             max-width: $md3;
         }
         @media (max-width:($md3 + $px)) {
-            height: 60px;
+            height: 70px;
             max-width: $md4;
         }
         @media (max-width:($md4 + $px)) {
-            height: 40px;
+            height: 60px;
             max-width: $md5;
         }
         @media (max-width:($md5 + $px)) {
-            height: 40px;
+            height: 50px;
             max-width: 440px;
             padding: 0px 10px;
         }
@@ -86,22 +91,22 @@
         align-items: center; 
         float: right; 
         font-family: Raleway;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 700;
         @media (max-width:$md0) {
-            font-size: 18px;
+            font-size: 20px;
         }
         @media (max-width:($md2 + $px)) {
-            font-size: 16px;
+            font-size: 18px;
         }
         @media (max-width:($md3 + $px)) {
-            font-size: 14px;
+            font-size: 16px;
         }
         @media (max-width:($md4 + $px)) {
-            font-size: 12px;
+            font-size: 14px;
         }
         @media (max-width:($md5 + $px)) {
-            font-size: 10px;    
+            font-size: 12px;    
         }
         a {
             &:last-child {
@@ -166,25 +171,6 @@
             
             flex-direction: column;
         }
-        span {
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0px 0px 0px 10px;
-            @media (max-width:$md0) {
-                margin: 25px 0px 25px 10px ;
-                font-size: 14px;
-            }
-            @media (max-width:($md2 + $px)) {
-                margin: 25px 0px 35px 5px ;
-                font-size: 12px;
-            }
-            @media (max-width:($md3 + $px)) {
-                margin: 25px 0px 35px 5px ;
-                font-size: 10px;
-            }
-            
-        } 
     }
 
     &__links {
@@ -236,10 +222,6 @@
             &:last-child {
                 margin-bottom: 0px;
             }
-            &:hover {
-                color: #eb4536;
-                cursor: pointer;
-            }
         }
         @media (max-width:$md0) {
             font-size: 14px;
@@ -271,7 +253,7 @@
 
     &__call-block {
         margin: 0px 0px 10px 0px;
-        &:hover {
+        a:hover {
             color: #eb4536;
             cursor: pointer;
         }
@@ -284,10 +266,6 @@
         height: 100%;
         font-size: 18px;
         transition: color 0.4s ease 0s;
-        &:hover {
-            color: #eb4536;
-            cursor: pointer; 
-        }
         @media (max-width:$md0) {
             font-size: 16px;
         }
@@ -297,8 +275,12 @@
         @media (max-width:($md3 + $px)) {
             font-size: 12px;
         }
-        span {
+        a {
             color: #515151;
+        }
+        a:hover {
+            color: #eb4536;
+            cursor: pointer; 
         }
     }
     &__mail-icon {
